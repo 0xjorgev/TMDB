@@ -6,7 +6,8 @@ target 'TMDB-Challenge' do
   use_frameworks!
 
   # Pods for TMDB-Challenge
-
+  pod 'PureLayout'
+  pod 'moa'
 
   target 'TMDB-ChallengeTests' do
     inherit! :search_paths

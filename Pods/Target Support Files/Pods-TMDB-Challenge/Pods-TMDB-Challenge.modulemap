@@ -1,0 +1,6 @@
+framework module Pods_TMDB_Challenge {
+  umbrella header "Pods-TMDB-Challenge-umbrella.h"
+
+  export *
+  module * { export * }
+}
