@@ -14,6 +14,9 @@
 		189E1CF821F8070E003C8940 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189E1CF621F8070E003C8940 /* LaunchScreen.storyboard */; };
 		189E1D0321F8070F003C8940 /* TMDB_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E1D0221F8070F003C8940 /* TMDB_ChallengeTests.swift */; };
 		189E1D0E21F8070F003C8940 /* TMDB_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E1D0D21F8070F003C8940 /* TMDB_ChallengeUITests.swift */; };
+		256C712AAABD72ED9867D382 /* Pods_TMDB_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D552B381BCB1F891F7296D /* Pods_TMDB_ChallengeUITests.framework */; };
+		4B5DF86383AB47108EB8E61B /* Pods_TMDB_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AC0426DB15B6B2C68DBA49 /* Pods_TMDB_Challenge.framework */; };
+		BDFBEA174D9D816657754776 /* Pods_TMDB_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38243BA956107650F0BD30C /* Pods_TMDB_ChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17D552B381BCB1F891F7296D /* Pods_TMDB_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMDB_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		189E1CEA21F80703003C8940 /* TMDB-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TMDB-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		189E1CED21F80703003C8940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		189E1CEF21F80703003C8940 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 		189E1D0921F8070F003C8940 /* TMDB-ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TMDB-ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		189E1D0D21F8070F003C8940 /* TMDB_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDB_ChallengeUITests.swift; sourceTree = "<group>"; };
 		189E1D0F21F8070F003C8940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		607353A3AE5CFE512810A1EA /* Pods-TMDB-ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB-ChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMDB-ChallengeUITests/Pods-TMDB-ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6F0080E379FBA8D603EBA446 /* Pods-TMDB-ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB-ChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMDB-ChallengeTests/Pods-TMDB-ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		78AC0426DB15B6B2C68DBA49 /* Pods_TMDB_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMDB_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF60C671E180D09A14864031 /* Pods-TMDB-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB-Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMDB-Challenge/Pods-TMDB-Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		C145FC99F0E68E258D9624E4 /* Pods-TMDB-Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB-Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMDB-Challenge/Pods-TMDB-Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		C38243BA956107650F0BD30C /* Pods_TMDB_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMDB_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50F57315F6E89512F3DA81C /* Pods-TMDB-ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB-ChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMDB-ChallengeUITests/Pods-TMDB-ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D9734B17EC711D1A2DDBA30B /* Pods-TMDB-ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB-ChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMDB-ChallengeTests/Pods-TMDB-ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B5DF86383AB47108EB8E61B /* Pods_TMDB_Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDFBEA174D9D816657754776 /* Pods_TMDB_ChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				256C712AAABD72ED9867D382 /* Pods_TMDB_ChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				189E1D0121F8070F003C8940 /* TMDB-ChallengeTests */,
 				189E1D0C21F8070F003C8940 /* TMDB-ChallengeUITests */,
 				189E1CEB21F80703003C8940 /* Products */,
+				A6D83D89E7E9F0DC2BEA5FFE /* Pods */,
+				47385C4A0BEC05F7898492F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = "TMDB-ChallengeUITests";
 			sourceTree = "<group>";
 		};
+		47385C4A0BEC05F7898492F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78AC0426DB15B6B2C68DBA49 /* Pods_TMDB_Challenge.framework */,
+				C38243BA956107650F0BD30C /* Pods_TMDB_ChallengeTests.framework */,
+				17D552B381BCB1F891F7296D /* Pods_TMDB_ChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6D83D89E7E9F0DC2BEA5FFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C145FC99F0E68E258D9624E4 /* Pods-TMDB-Challenge.debug.xcconfig */,
+				BF60C671E180D09A14864031 /* Pods-TMDB-Challenge.release.xcconfig */,
+				6F0080E379FBA8D603EBA446 /* Pods-TMDB-ChallengeTests.debug.xcconfig */,
+				D9734B17EC711D1A2DDBA30B /* Pods-TMDB-ChallengeTests.release.xcconfig */,
+				D50F57315F6E89512F3DA81C /* Pods-TMDB-ChallengeUITests.debug.xcconfig */,
+				607353A3AE5CFE512810A1EA /* Pods-TMDB-ChallengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 189E1D1221F8070F003C8940 /* Build configuration list for PBXNativeTarget "TMDB-Challenge" */;
 			buildPhases = (
+				695EC330BA0977C2BEF14F7F /* [CP] Check Pods Manifest.lock */,
 				189E1CE621F80703003C8940 /* Sources */,
 				189E1CE721F80703003C8940 /* Frameworks */,
 				189E1CE821F80703003C8940 /* Resources */,
+				2E20AB915914A65B3D572B40 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 189E1D1521F8070F003C8940 /* Build configuration list for PBXNativeTarget "TMDB-ChallengeTests" */;
 			buildPhases = (
+				608C4472CA99534DA2DB84BA /* [CP] Check Pods Manifest.lock */,
 				189E1CFA21F8070F003C8940 /* Sources */,
 				189E1CFB21F8070F003C8940 /* Frameworks */,
 				189E1CFC21F8070F003C8940 /* Resources */,
@@ -167,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 189E1D1821F8070F003C8940 /* Build configuration list for PBXNativeTarget "TMDB-ChallengeUITests" */;
 			buildPhases = (
+				3DB9EB99D3E9CDD3B8C31D83 /* [CP] Check Pods Manifest.lock */,
 				189E1D0521F8070F003C8940 /* Sources */,
 				189E1D0621F8070F003C8940 /* Frameworks */,
 				189E1D0721F8070F003C8940 /* Resources */,
@@ -250,6 +294,83 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E20AB915914A65B3D572B40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TMDB-Challenge/Pods-TMDB-Challenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/moa/moa.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/moa.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMDB-Challenge/Pods-TMDB-Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DB9EB99D3E9CDD3B8C31D83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TMDB-ChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		608C4472CA99534DA2DB84BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TMDB-ChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		695EC330BA0977C2BEF14F7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TMDB-Challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		189E1CE621F80703003C8940 /* Sources */ = {
@@ -430,6 +551,7 @@
 		};
 		189E1D1321F8070F003C8940 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C145FC99F0E68E258D9624E4 /* Pods-TMDB-Challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +570,7 @@
 		};
 		189E1D1421F8070F003C8940 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF60C671E180D09A14864031 /* Pods-TMDB-Challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +589,7 @@
 		};
 		189E1D1621F8070F003C8940 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F0080E379FBA8D603EBA446 /* Pods-TMDB-ChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +611,7 @@
 		};
 		189E1D1721F8070F003C8940 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9734B17EC711D1A2DDBA30B /* Pods-TMDB-ChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +633,7 @@
 		};
 		189E1D1921F8070F003C8940 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D50F57315F6E89512F3DA81C /* Pods-TMDB-ChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +654,7 @@
 		};
 		189E1D1A21F8070F003C8940 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 607353A3AE5CFE512810A1EA /* Pods-TMDB-ChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
