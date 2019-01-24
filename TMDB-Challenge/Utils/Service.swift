@@ -89,6 +89,8 @@ class Service:NSObject {
         
         let endpoint = "\(BASEURL)/search/movie?api_key=\(apiKey)&language=en-US&query=\(query ?? "")&page=\(page ?? 1)&include_adult=false"
         
+        
+        
         getData(url: endpoint, model: Search.self) { (res, error) in
             
             if error == nil {
