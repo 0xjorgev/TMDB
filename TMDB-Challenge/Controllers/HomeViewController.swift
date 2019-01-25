@@ -15,6 +15,8 @@ class HomeViewController: GenericTableViewController<Movie, MovieTableViewCell>{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = .black
+        
        // self.searchController?.searchBar.delegate = self
     }
     
@@ -67,10 +69,19 @@ class HomeViewController: GenericTableViewController<Movie, MovieTableViewCell>{
         })
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func customizeTableViewHeader(){
         
-        //customLargeTitle(title:NSLocalizedString("Home", comment: ""))
+        let head = TableViewHeaderView()
+        
+        head.createViews()
+        
+       // header = header
+        
+        head.frame = CGRect(x: 0.0, y: 0.0, width: self.tableView.frame.width, height: 145.0)
+        
+        self.tableView.tableHeaderView = head
+        
+        
     }
     
     

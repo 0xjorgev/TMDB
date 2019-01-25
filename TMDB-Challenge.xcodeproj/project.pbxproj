@@ -15,6 +15,9 @@
 		186FA85621FA8F3C005E5BE0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186FA85521FA8F3C005E5BE0 /* HomeViewController.swift */; };
 		186FA85921FAAF34005E5BE0 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186FA85821FAAF34005E5BE0 /* MovieTableViewCell.swift */; };
 		186FA85B21FABF7B005E5BE0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186FA85A21FABF7B005E5BE0 /* Colors.swift */; };
+		188E626421FB5565003D4809 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E626321FB5565003D4809 /* UILabel+Extension.swift */; };
+		188E626621FBA5D1003D4809 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E626521FBA5D1003D4809 /* UIView+Extension.swift */; };
+		188E626821FBA70C003D4809 /* TableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E626721FBA70C003D4809 /* TableViewHeaderView.swift */; };
 		189E1CEE21F80703003C8940 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E1CED21F80703003C8940 /* AppDelegate.swift */; };
 		189E1CF021F80703003C8940 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E1CEF21F80703003C8940 /* ViewController.swift */; };
 		189E1CF521F8070E003C8940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189E1CF421F8070E003C8940 /* Assets.xcassets */; };
@@ -53,6 +56,9 @@
 		186FA85521FA8F3C005E5BE0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		186FA85821FAAF34005E5BE0 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		186FA85A21FABF7B005E5BE0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		188E626321FB5565003D4809 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		188E626521FBA5D1003D4809 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		188E626721FBA70C003D4809 /* TableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeaderView.swift; sourceTree = "<group>"; };
 		189E1CEA21F80703003C8940 /* TMDB-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TMDB-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		189E1CED21F80703003C8940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		189E1CEF21F80703003C8940 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +124,7 @@
 			children = (
 				186FA84C21FA055A005E5BE0 /* Service.swift */,
 				186FA85A21FABF7B005E5BE0 /* Colors.swift */,
+				188E626721FBA70C003D4809 /* TableViewHeaderView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -138,6 +145,15 @@
 				186FA85821FAAF34005E5BE0 /* MovieTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		188E626221FB554B003D4809 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				188E626321FB5565003D4809 /* UILabel+Extension.swift */,
+				188E626521FBA5D1003D4809 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		189E1CE121F80703003C8940 = {
@@ -165,6 +181,7 @@
 		189E1CEC21F80703003C8940 /* TMDB-Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				188E626221FB554B003D4809 /* Extensions */,
 				186FA85721FAAF15005E5BE0 /* Cells */,
 				186FA85221FA6CAF005E5BE0 /* Controllers */,
 				186FA84921F9FEF8005E5BE0 /* Utils */,
@@ -429,11 +446,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188E626421FB5565003D4809 /* UILabel+Extension.swift in Sources */,
 				189E1CF021F80703003C8940 /* ViewController.swift in Sources */,
 				186FA85B21FABF7B005E5BE0 /* Colors.swift in Sources */,
 				186FA84F21FA169F005E5BE0 /* Upcoming.swift in Sources */,
 				186FA85921FAAF34005E5BE0 /* MovieTableViewCell.swift in Sources */,
+				188E626821FBA70C003D4809 /* TableViewHeaderView.swift in Sources */,
 				186FA85421FA6CD7005E5BE0 /* GenericTableViewController.swift in Sources */,
+				188E626621FBA5D1003D4809 /* UIView+Extension.swift in Sources */,
 				186FA84D21FA055A005E5BE0 /* Service.swift in Sources */,
 				186FA85121FA359C005E5BE0 /* Search.swift in Sources */,
 				186FA85621FA8F3C005E5BE0 /* HomeViewController.swift in Sources */,

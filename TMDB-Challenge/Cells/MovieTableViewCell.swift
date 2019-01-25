@@ -10,6 +10,8 @@ import UIKit
 import PureLayout
 import moa
 
+let IMG_URL = "https://image.tmdb.org/t/p/w400/"
+
 class MovieTableViewCell: UITableViewCell {
     
     var poster:UIImageView?
@@ -33,32 +35,7 @@ class MovieTableViewCell: UITableViewCell {
         
         didSet{
             
-            let titleStr = "\(cellData?.movie?.title ?? "") "
-            
-            let yearStr = "(\(cellData?.movie?.releaseDate?.prefix(4) ?? ""))"
-            
-            let attributedString =  NSMutableAttributedString()
-            
-            let titleStyle = NSMutableParagraphStyle()
-            
-            let yearStyle = NSMutableParagraphStyle()
-            
-            let titleFont:UIFont = UIFont.boldSystemFont(ofSize: 24.0)
-            
-            let yearFont:UIFont = UIFont.italicSystemFont(ofSize: 24.0)
-            
-            let attrTitle = [NSAttributedString.Key.font: titleFont, NSAttributedString.Key.foregroundColor: UIColor.black, .paragraphStyle:titleStyle]
-            
-            let attrYear = [NSAttributedString.Key.font: yearFont, .paragraphStyle:yearStyle, NSAttributedString.Key.foregroundColor: UIColor.black]
-            
-            attributedString.append(NSAttributedString(string: titleStr, attributes: attrTitle))
-            
-            attributedString.append(NSAttributedString(string: yearStr, attributes: attrYear))
-            
-            title?.attributedText = attributedString
-            
-            
-            //title?.text = "\(cellData?.movie?.title ?? "") (\(cellData?.movie?.releaseDate?.prefix(4) ?? ""))"
+            title?.addAttributedTitle(title: cellData?.movie?.title, year: cellData?.movie?.releaseDate)
             
             language?.text = cellData?.movie?.originalLanguage ?? ""
             
@@ -66,13 +43,9 @@ class MovieTableViewCell: UITableViewCell {
             
             extra?.text = "\(cellData?.movie?.voteCount ?? 0) / \(cellData?.movie?.popularity ?? 0.0)"
             
-           // status?.text = showCellData?.show?.status ?? ""
-            
-           // type?.text = showCellData?.show?.type ?? ""
-            
             poster?.image = UIImage(named: "no-image")
             
-            poster?.moa.url = "https://image.tmdb.org/t/p/w400/\(cellData?.movie?.posterPath ?? "")"
+            poster?.moa.url = "\(IMG_URL)\(cellData?.movie?.posterPath ?? "")"
             
             poster?.moa.onSuccess = { image in
                 return image
@@ -103,6 +76,8 @@ class MovieTableViewCell: UITableViewCell {
     
     func createViews(){
         
+        self.backgroundColor = .black
+        
         let emptyImage = UIImage(named: "no-image")
         
         poster = UIImageView(image: emptyImage)
@@ -125,7 +100,7 @@ class MovieTableViewCell: UITableViewCell {
         
         originalTitle?.font = UIFont.italicSystemFont(ofSize: 14.0)
         
-        originalTitle?.textColor = .black
+        originalTitle?.textColor = UIColor.lightGray
         
         originalTitle?.numberOfLines = 3
         
@@ -136,7 +111,7 @@ class MovieTableViewCell: UITableViewCell {
         
         language?.font = UIFont.systemFont(ofSize: 18.0)
         
-        language?.textColor = .black
+        language?.textColor = UIColor.lightGray
         
         self.addSubview(language!)
         
@@ -145,33 +120,14 @@ class MovieTableViewCell: UITableViewCell {
         
         extra?.font = UIFont.systemFont(ofSize: 11.0)
         
-        extra?.textColor = .black
+        extra?.textColor = Colors.mainColor
         
         extra?.textAlignment = .center
         
         self.addSubview(extra!)
         
-        //3    28    37    
-//        status = UILabel()
-//
-//        status?.font = UIFont.systemFont(ofSize: 12.0)
-//
-//        status?.textColor = .black
-//
-//        self.addSubview(status!)
-        
-        
-//        type = UILabel()
-//
-//        type?.font = UIFont.systemFont(ofSize: 12.0)
-//
-//        type?.textColor = .black
-//
-//        self.addSubview(type!)
-        
         
         self.accessoryType = .disclosureIndicator
-        
         
         setupConstraints()
         
@@ -185,7 +141,7 @@ class MovieTableViewCell: UITableViewCell {
         
         poster?.autoPinEdge(.top, to: .top, of: self, withOffset: 12.0)
         
-        poster?.autoPinEdge(.left, to: .left, of: self, withOffset: 5.0)
+        poster?.autoPinEdge(.left, to: .left, of: self, withOffset: 8.0)
         
         poster?.autoSetDimension(.height, toSize: imageHeight)
         
@@ -220,7 +176,7 @@ class MovieTableViewCell: UITableViewCell {
         
         extra?.autoPinEdge(.top, to: .bottom, of: poster!, withOffset: 5.0)
         
-        extra?.autoPinEdge(.left, to: .left, of: self, withOffset: 5.0)
+        extra?.autoPinEdge(.left, to: .left, of: self, withOffset: 8.0)
         
         //extra?.autoPinEdge(.right, to: .right, of: self, withOffset: -5.0)
         
