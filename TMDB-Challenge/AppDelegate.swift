@@ -25,22 +25,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.makeKeyAndVisible()
         
-        testService()
+      //  testService()
         
         return true
     }
     
     func testService(){
         
-        Service.shared.getMovieSearch(query: "Alien", page: 1, completion: { (res, error) in
+        Service.shared.getUpcomingMovies(page: 1, completion: { (res, error) in
             
-            if error == nil {
-                print("Search movies: \(String(describing: res?.result))")
+            if res != nil {
+                print("Upcoming movies: \(String(describing: res?.result))")
                 //assert(res?.title == "Lock, Stock and Two Smoking Barrels", "Title is OK")
-            } else {
-                print("Search movies: Error")
-                //assert(false , "Broken")
-            }
+            } 
         })
     }
 
