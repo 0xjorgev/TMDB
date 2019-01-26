@@ -8,16 +8,50 @@
 
 import UIKit
 
-class HomeViewController: GenericTableViewController<Movie, MovieTableViewCell>{
+class HomeViewController: GenericTableViewController<Movie, MovieTableViewCell>, UISearchBarDelegate{
     
     var fetchingMore = false
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         self.view.backgroundColor = .black
         
-       // self.searchController?.searchBar.delegate = self
+        searchController = UISearchController(searchResultsController: nil)
+        
+        self.refreshControl = UIRefreshControl()
+        
+        navigationItem.searchController = searchController
+        
+        searchController?.obscuresBackgroundDuringPresentation = false
+        
+        navigationItem.hidesSearchBarWhenScrolling = false
+        
+        definesPresentationContext = true
+        
+        refreshControl?.addTarget(self, action: #selector(refresData), for: .valueChanged)
+        
+        self.searchController?.searchBar.delegate = self
+    }
+    
+    @objc func refresData(_ sender: Any) {
+        // Fetch Weather Data
+        getData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        
+        
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        
+        return .lightContent
+        
     }
     
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -75,25 +109,46 @@ class HomeViewController: GenericTableViewController<Movie, MovieTableViewCell>{
         
         head.createViews()
         
+        head.imageName = "UpcomingHeader"
        // header = header
         
         head.frame = CGRect(x: 0.0, y: 0.0, width: self.tableView.frame.width, height: 145.0)
         
         self.tableView.tableHeaderView = head
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let detail = MovieDetailTableViewController()
+        
+        let item = items?[indexPath.row]
+        
+        detail.itemId = item?.id
+        
+        self.navigationController?.pushViewController(detail, animated: true)
         
     }
     
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        //items = itemsCopy
+        items = itemsCopy
+        //fetchingMore = true
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String){
+        
+        if itemsCopy.count == 0 {
+            itemsCopy = items!
+        }
+        
         if searchText.count != 0 {
+            
             filterByText(item: searchBar.text ?? "")
+            
         } else {
-            //items = itemsCopy
+            items = itemsCopy
+            
+            itemsCopy = []
         }
     }
     

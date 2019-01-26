@@ -12,7 +12,9 @@ struct Movie: Codable {
     
     let adult, video: Bool?
     
-    let backdropPath, homepage, imdbID, originalLanguage, originalTitle, overview, releaseDate, status, tagline, title, posterPath, belongsToCollection: String?
+    let backdropPath, homepage, imdbID, originalLanguage, originalTitle, overview, releaseDate, status, tagline, title, posterPath: String?
+    
+    let belongsToCollection: BelongsToCollection?
     
     let id, revenue, runtime, budget, voteCount: Int?
     
@@ -28,6 +30,7 @@ struct Movie: Codable {
     
     
     enum CodingKeys: String, CodingKey {
+        
         case budget, genres, homepage, id, adult, overview, popularity, revenue, runtime, status, tagline, title, video
         
         case backdropPath = "backdrop_path"
@@ -81,21 +84,39 @@ struct ProductionCompany: Codable {
 
 struct ProductionCountry: Codable {
     
-    let iso3166_1, name: String
+    let name: String
     
     enum CodingKeys: String, CodingKey {
-        case iso3166_1 = "iso_3166_1"
         
         case name
     }
 }
 
 struct SpokenLanguage: Codable {
-    let iso639_1, name: String
+    let name: String
     
     enum CodingKeys: String, CodingKey {
-        case iso639_1 = "iso_639_1"
         
         case name
+    }
+}
+
+struct BelongsToCollection: Codable {
+    
+    let id:Int?
+    
+    let name: String?
+    
+    let posterPath: String?
+    
+    let backdropPath: String?
+    
+    enum CodingKeys: String, CodingKey {
+        
+        case id, name
+        
+        case posterPath = "poster_path"
+        
+        case backdropPath = "backdrop_path"
     }
 }

@@ -8,18 +8,36 @@
 
 import Foundation
 import UIKit
+import moa
 
 class TableViewHeaderView:UIView {
     
     var headerImage:UIImageView?
     
+    var imageUrl:String?{
+        didSet{
+            
+            headerImage?.moa.url = imageUrl
+            
+            headerImage?.moa.onSuccess = { image in
+                return image
+            }
+        }
+    }
+    
+    var imageName:String?{
+        didSet{
+            
+            headerImage?.image = UIImage(named: imageName!)
+            
+        }
+    }
+    
     func createViews(){
         
         headerImage = UIImageView()
         
-        headerImage?.contentMode = .scaleAspectFill
-        
-        headerImage?.image = UIImage(named: "IMG_45151_")
+        headerImage?.contentMode = .redraw
         
         self.addSubview(headerImage!)
         

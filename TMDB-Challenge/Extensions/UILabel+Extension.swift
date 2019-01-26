@@ -54,4 +54,34 @@ extension UILabel {
         
         self.attributedText = attributedString
     }
+    
+    func addInformationTitleStyle() {
+        
+        self.font = UIFont.systemFont(ofSize: 12.0)
+        
+        self.textAlignment = .right
+        
+        self.textColor = UIColor.white
+    }
+    
+    func addInformationStyle() {
+        
+        self.font = UIFont.systemFont(ofSize: 12.0)
+        
+        self.textAlignment = .left
+        
+        self.numberOfLines = 0
+        
+        self.textColor = UIColor.lightGray
+    }
+    
+    func addCellTitleStyle(text:String){
+        
+        self.font = UIFont.boldSystemFont(ofSize: 18.0)
+        
+        self.textColor = UIColor.white
+        
+        self.text = text
+        
+    }
 }

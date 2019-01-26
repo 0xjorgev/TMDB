@@ -19,8 +19,16 @@ class ViewController: UITabBarController {
         
         //self.tabBar.isTranslucent = false
         
+       // UIApplication.shared.statusBarStyle = .lightContent
+        
         self.tabBar.barTintColor = Colors.darkColor
         
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+
+        return .lightContent
+
     }
 
 
@@ -34,7 +42,7 @@ extension ViewController {
             , identifier: "MovieTableViewCell"
             , configure: { cell, item in
                 
-                cell.cellData = MovieTableViewCell.CellData.init(movie: item)
+                cell.movie = item
                 
             }
             , selectHandler: { _ in }

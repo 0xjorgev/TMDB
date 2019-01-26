@@ -16,6 +16,10 @@ class GenericTableViewController<T, Cell: UITableViewCell>: UITableViewControlle
         }
     }
     
+    var itemsCopy = [T]()
+    
+    var filteredItems = [T]()
+    
     var configure: ((Cell, T?) -> Void)?
     
     var selectHandler: ((T?) -> Void)?
@@ -27,6 +31,8 @@ class GenericTableViewController<T, Cell: UITableViewCell>: UITableViewControlle
     var sectionTitle:String?
     
     var spinner:UIActivityIndicatorView?
+    
+    var searchController:UISearchController?
     
     var range:(Date?, Date?)?
     
@@ -88,7 +94,6 @@ class GenericTableViewController<T, Cell: UITableViewCell>: UITableViewControlle
         
         print("View will Appear!")
         
-        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -127,7 +132,7 @@ class GenericTableViewController<T, Cell: UITableViewCell>: UITableViewControlle
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 60.0
+        return 5.0
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
