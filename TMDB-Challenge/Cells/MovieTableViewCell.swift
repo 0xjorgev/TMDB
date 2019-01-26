@@ -10,6 +10,8 @@ import UIKit
 import PureLayout
 import moa
 
+let IMG_BASE = "https://image.tmdb.org/t/p/w400/"
+
 class MovieTableViewCell: UITableViewCell {
     
     var poster:UIImageView?
@@ -33,32 +35,7 @@ class MovieTableViewCell: UITableViewCell {
         
         didSet{
             
-            let titleStr = "\(cellData?.movie?.title ?? "") "
-            
-            let yearStr = "(\(cellData?.movie?.releaseDate?.prefix(4) ?? ""))"
-            
-            let attributedString =  NSMutableAttributedString()
-            
-            let titleStyle = NSMutableParagraphStyle()
-            
-            let yearStyle = NSMutableParagraphStyle()
-            
-            let titleFont:UIFont = UIFont.boldSystemFont(ofSize: 24.0)
-            
-            let yearFont:UIFont = UIFont.italicSystemFont(ofSize: 24.0)
-            
-            let attrTitle = [NSAttributedString.Key.font: titleFont, NSAttributedString.Key.foregroundColor: UIColor.black, .paragraphStyle:titleStyle]
-            
-            let attrYear = [NSAttributedString.Key.font: yearFont, .paragraphStyle:yearStyle, NSAttributedString.Key.foregroundColor: UIColor.black]
-            
-            attributedString.append(NSAttributedString(string: titleStr, attributes: attrTitle))
-            
-            attributedString.append(NSAttributedString(string: yearStr, attributes: attrYear))
-            
-            title?.attributedText = attributedString
-            
-            
-            //title?.text = "\(cellData?.movie?.title ?? "") (\(cellData?.movie?.releaseDate?.prefix(4) ?? ""))"
+            title?.attributedText = self.addTitleStyle(title: cellData?.movie?.title, year: cellData?.movie?.releaseDate)
             
             language?.text = cellData?.movie?.originalLanguage ?? ""
             
@@ -66,13 +43,9 @@ class MovieTableViewCell: UITableViewCell {
             
             extra?.text = "\(cellData?.movie?.voteCount ?? 0) / \(cellData?.movie?.popularity ?? 0.0)"
             
-           // status?.text = showCellData?.show?.status ?? ""
-            
-           // type?.text = showCellData?.show?.type ?? ""
-            
             poster?.image = UIImage(named: "no-image")
             
-            poster?.moa.url = "https://image.tmdb.org/t/p/w400/\(cellData?.movie?.posterPath ?? "")"
+            poster?.moa.url = "\(IMG_BASE)\(cellData?.movie?.posterPath ?? "")"
             
             poster?.moa.onSuccess = { image in
                 return image
@@ -243,4 +216,34 @@ class MovieTableViewCell: UITableViewCell {
         
     }
     
+}
+
+extension MovieTableViewCell {
+    
+    func addTitleStyle(title:String?, year:String?) -> NSMutableAttributedString {
+        
+        let titleStr = "\(title ?? "") "
+        
+        let yearStr = "(\(year?.prefix(4) ?? ""))"
+        
+        let attributedString =  NSMutableAttributedString()
+        
+        let titleStyle = NSMutableParagraphStyle()
+        
+        let yearStyle = NSMutableParagraphStyle()
+        
+        let titleFont:UIFont = UIFont.boldSystemFont(ofSize: 24.0)
+        
+        let yearFont:UIFont = UIFont.italicSystemFont(ofSize: 24.0)
+        
+        let attrTitle = [NSAttributedString.Key.font: titleFont, NSAttributedString.Key.foregroundColor: UIColor.black, .paragraphStyle:titleStyle]
+        
+        let attrYear = [NSAttributedString.Key.font: yearFont, .paragraphStyle:yearStyle, NSAttributedString.Key.foregroundColor: UIColor.black]
+        
+        attributedString.append(NSAttributedString(string: titleStr, attributes: attrTitle))
+        
+        attributedString.append(NSAttributedString(string: yearStr, attributes: attrYear))
+        
+        return attributedString
+    }
 }
