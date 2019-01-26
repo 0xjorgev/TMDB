@@ -15,9 +15,9 @@ class ViewController: UITabBarController {
         
         viewControllers = [createHomeController()]
         
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .black
         
-        self.tabBar.isTranslucent = false
+        //self.tabBar.isTranslucent = false
         
         self.tabBar.barTintColor = Colors.darkColor
         
@@ -45,10 +45,25 @@ extension ViewController {
         
         controllerNavigation.navigationBar.prefersLargeTitles = true
         
-        controllerNavigation.navigationBar.tintColor = Colors.darkColor
+        //controllerNavigation.navigationBar.tintColor =
         
-        controller.navigationItem.title = "Upcoming Movies"
+        controllerNavigation.navigationBar.barTintColor = Colors.darkColor
         
+        controller.navigationItem.title = "Upcoming"
+        
+        //22    19    16    
+        
+        let textAttributes:[NSAttributedString.Key:Any]? =
+            [NSAttributedString.Key(rawValue: NSAttributedString.Key.foregroundColor.rawValue):Colors.mainColor
+                ,NSAttributedString.Key(rawValue: NSAttributedString.Key.font.rawValue):UIFont.boldSystemFont(ofSize: 16.0)]
+        
+        let bigTextAttributes:[NSAttributedString.Key:Any]? =
+            [NSAttributedString.Key(rawValue: NSAttributedString.Key.foregroundColor.rawValue):Colors.mainColor
+                ,NSAttributedString.Key(rawValue: NSAttributedString.Key.font.rawValue):UIFont.boldSystemFont(ofSize: 28.0)]
+        
+        controller.navigationController?.navigationBar.titleTextAttributes = textAttributes
+        
+        controller.navigationController?.navigationBar.largeTitleTextAttributes = bigTextAttributes
         
         let img = UIImage(named: "home")
         
