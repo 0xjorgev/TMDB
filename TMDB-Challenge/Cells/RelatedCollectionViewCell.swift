@@ -20,7 +20,7 @@ class RelatedCollectionViewCell: UICollectionViewCell {
             
             title?.text = movie?.title ?? ""
             
-            poster?.image = UIImage(named: "no-image")
+            poster?.image = UIImage(named: "no-image-v")
             
             poster?.moa.url = "\(IMG_URL)\(movie?.posterPath ?? "")"
             

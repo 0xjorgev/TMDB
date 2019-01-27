@@ -33,10 +33,13 @@ class HomeViewController: GenericTableViewController<Movie, MovieTableViewCell>,
         refreshControl?.addTarget(self, action: #selector(refresData), for: .valueChanged)
         
         self.searchController?.searchBar.delegate = self
+        
+        setNeedsStatusBarAppearanceUpdate()
     }
     
     @objc func refresData(_ sender: Any) {
-        // Fetch Weather Data
+        
+        
         getData()
     }
     
@@ -75,15 +78,11 @@ class HomeViewController: GenericTableViewController<Movie, MovieTableViewCell>,
         
         fetchingMore = true
         
-        //print("Current page: \(currentPage)")
-        
         Service.shared.getUpcomingMovies(page: currentPage, completion: { (res, err) in
             
             if res != nil {
                 
                 self.items! += res?.result ?? []
-                
-                //print("Items count: \(self.items?.count)")
                 
                 self.currentPage = res?.page ?? 0
                 
@@ -146,6 +145,7 @@ class HomeViewController: GenericTableViewController<Movie, MovieTableViewCell>,
             filterByText(item: searchBar.text ?? "")
             
         } else {
+            
             items = itemsCopy
             
             itemsCopy = []
@@ -154,9 +154,7 @@ class HomeViewController: GenericTableViewController<Movie, MovieTableViewCell>,
     
     func filterByText(item:String) {
         
-        items = items?.filter{
-            $0.title!.contains(item)
-        } ?? []
+        items = items?.filter{ $0.title!.contains(item) } ?? []
     }
     
 }

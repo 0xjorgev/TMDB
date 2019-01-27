@@ -46,6 +46,10 @@ class GenericTableViewController<T, Cell: UITableViewCell>: UITableViewControlle
     
     var totalPages:Int = -1
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     //var cellSetup:CellSetup?
     
     init(items: [T], identifier:String, configure: @escaping (Cell, T?) -> Void, selectHandler: @escaping (T?) -> Void, sectionTitle:String?) {
@@ -78,11 +82,11 @@ class GenericTableViewController<T, Cell: UITableViewCell>: UITableViewControlle
         
         super.viewDidLoad()
         
+         setNeedsStatusBarAppearanceUpdate()
+        
         self.spinner?.startAnimating()
         
         getData()
-        
-        print("View did load!")
         
     }
     
@@ -91,8 +95,6 @@ class GenericTableViewController<T, Cell: UITableViewCell>: UITableViewControlle
         super.viewWillAppear(animated)
         
         customizeTableViewHeader()
-        
-        print("View will Appear!")
         
     }
     
@@ -128,7 +130,7 @@ class GenericTableViewController<T, Cell: UITableViewCell>: UITableViewControlle
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return cellHeigth ?? 160.0
+        return cellHeigth ?? 180.0
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

@@ -110,4 +110,19 @@ class Service:NSObject {
         }
     }
     
+    
+    func getMovieTrailer(id:String?, completion: @escaping (Videos?, Error?) -> Void ){
+        
+        let endpoint = "\(BASEURL)/movie/\(id ?? "0")/videos?api_key=\(API_KEY)&language=en-US"
+        
+        getData(url: endpoint, model: Videos.self) { (res, error) in
+            
+            if error == nil {
+                completion(res, nil)
+            } else {
+                completion(nil, error)
+            }
+        }
+    }
+    
 }

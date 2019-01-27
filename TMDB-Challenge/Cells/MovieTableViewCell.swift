@@ -35,7 +35,7 @@ class MovieTableViewCell: UITableViewCell {
             
             extra?.text = "\(movie?.voteCount ?? 0) / \(movie?.popularity ?? 0.0)"
             
-            poster?.image = UIImage(named: "no-image")
+            poster?.image = UIImage(named: "no-image-v")
             
             poster?.moa.url = "\(IMG_URL)\(movie?.posterPath ?? "")"
             
@@ -62,7 +62,7 @@ class MovieTableViewCell: UITableViewCell {
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+        super.setSelected(false, animated: false)
         
         // Configure the view for the selected state
     }

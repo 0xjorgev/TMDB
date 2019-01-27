@@ -116,7 +116,7 @@ class RelatedMoviesCollectionViewController: UIViewController , UICollectionView
                 
             } else {
                 
-                print("Error: \(err)")
+                print("Error: \(String(describing: err))")
             }
         }
         

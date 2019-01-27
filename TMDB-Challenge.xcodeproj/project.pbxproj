@@ -30,6 +30,9 @@
 		186FA87821FCC428005E5BE0 /* Related.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186FA87721FCC428005E5BE0 /* Related.swift */; };
 		186FA87A21FCC449005E5BE0 /* ReducedMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186FA87921FCC449005E5BE0 /* ReducedMovie.swift */; };
 		186FA87C21FCD256005E5BE0 /* RelatedMoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186FA87B21FCD256005E5BE0 /* RelatedMoviesTableViewCell.swift */; };
+		186FA87E21FD27DA005E5BE0 /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186FA87D21FD27D9005E5BE0 /* Trailer.swift */; };
+		186FA88021FD3729005E5BE0 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186FA87F21FD3729005E5BE0 /* SearchTableViewController.swift */; };
+		186FA88221FD46C0005E5BE0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 186FA88121FD46BF005E5BE0 /* README.md */; };
 		189E1CEE21F80703003C8940 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E1CED21F80703003C8940 /* AppDelegate.swift */; };
 		189E1CF021F80703003C8940 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E1CEF21F80703003C8940 /* ViewController.swift */; };
 		189E1CF521F8070E003C8940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189E1CF421F8070E003C8940 /* Assets.xcassets */; };
@@ -83,6 +86,9 @@
 		186FA87721FCC428005E5BE0 /* Related.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Related.swift; sourceTree = "<group>"; };
 		186FA87921FCC449005E5BE0 /* ReducedMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducedMovie.swift; sourceTree = "<group>"; };
 		186FA87B21FCD256005E5BE0 /* RelatedMoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedMoviesTableViewCell.swift; sourceTree = "<group>"; };
+		186FA87D21FD27D9005E5BE0 /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
+		186FA87F21FD3729005E5BE0 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		186FA88121FD46BF005E5BE0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		189E1CEA21F80703003C8940 /* TMDB-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TMDB-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		189E1CED21F80703003C8940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		189E1CEF21F80703003C8940 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +147,7 @@
 				186FA85021FA359C005E5BE0 /* Search.swift */,
 				186FA87721FCC428005E5BE0 /* Related.swift */,
 				186FA87921FCC449005E5BE0 /* ReducedMovie.swift */,
+				186FA87D21FD27D9005E5BE0 /* Trailer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -148,6 +155,7 @@
 		186FA84921F9FEF8005E5BE0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				189E1CED21F80703003C8940 /* AppDelegate.swift */,
 				186FA85C21FBF32B005E5BE0 /* TableViewHeaderView.swift */,
 				186FA84C21FA055A005E5BE0 /* Service.swift */,
 				186FA85A21FABF7B005E5BE0 /* Colors.swift */,
@@ -164,6 +172,7 @@
 				186FA85521FA8F3C005E5BE0 /* HomeViewController.swift */,
 				186FA86521FBFD73005E5BE0 /* MovieDetailTableViewController.swift */,
 				186FA87321FCBD9C005E5BE0 /* RelatedMoviesCollectionViewController.swift */,
+				186FA87F21FD3729005E5BE0 /* SearchTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -195,6 +204,7 @@
 		189E1CE121F80703003C8940 = {
 			isa = PBXGroup;
 			children = (
+				186FA88121FD46BF005E5BE0 /* README.md */,
 				189E1CEC21F80703003C8940 /* TMDB-Challenge */,
 				189E1D0121F8070F003C8940 /* TMDB-ChallengeTests */,
 				189E1D0C21F8070F003C8940 /* TMDB-ChallengeUITests */,
@@ -222,7 +232,6 @@
 				186FA85221FA6CAF005E5BE0 /* Controllers */,
 				186FA84921F9FEF8005E5BE0 /* Utils */,
 				186FA84821F9FEF1005E5BE0 /* Models */,
-				189E1CED21F80703003C8940 /* AppDelegate.swift */,
 				189E1CF421F8070E003C8940 /* Assets.xcassets */,
 				189E1CF621F8070E003C8940 /* LaunchScreen.storyboard */,
 				189E1CF921F8070E003C8940 /* Info.plist */,
@@ -379,6 +388,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186FA88221FD46C0005E5BE0 /* README.md in Resources */,
 				189E1CF821F8070E003C8940 /* LaunchScreen.storyboard in Resources */,
 				189E1CF521F8070E003C8940 /* Assets.xcassets in Resources */,
 			);
@@ -497,9 +507,11 @@
 				186FA85421FA6CD7005E5BE0 /* GenericTableViewController.swift in Sources */,
 				186FA86121FBF3FE005E5BE0 /* UIView+Extension.swift in Sources */,
 				186FA87221FCBA22005E5BE0 /* MovieLanguageTableViewCell.swift in Sources */,
+				186FA87E21FD27DA005E5BE0 /* Trailer.swift in Sources */,
 				186FA84D21FA055A005E5BE0 /* Service.swift in Sources */,
 				186FA85121FA359C005E5BE0 /* Search.swift in Sources */,
 				186FA87621FCBDBC005E5BE0 /* RelatedCollectionViewCell.swift in Sources */,
+				186FA88021FD3729005E5BE0 /* SearchTableViewController.swift in Sources */,
 				186FA87A21FCC449005E5BE0 /* ReducedMovie.swift in Sources */,
 				186FA86621FBFD73005E5BE0 /* MovieDetailTableViewController.swift in Sources */,
 				186FA85621FA8F3C005E5BE0 /* HomeViewController.swift in Sources */,

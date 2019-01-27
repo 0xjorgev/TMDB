@@ -14,8 +14,12 @@ class TableViewHeaderView:UIView {
     
     var headerImage:UIImageView?
     
+    var visual = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
+    
     var imageUrl:String?{
         didSet{
+            
+            headerImage?.image = UIImage(named: "no-image-h")
             
             headerImage?.moa.url = imageUrl
             
@@ -42,6 +46,10 @@ class TableViewHeaderView:UIView {
         self.addSubview(headerImage!)
         
         
+        visual.alpha = 0.5
+        
+        self.addSubview(visual)
+        
         setupConstraints()
         
     }
@@ -55,5 +63,17 @@ class TableViewHeaderView:UIView {
         headerImage?.autoPinEdge(.right, to: .right, of: self, withOffset: 0.0)
         
         headerImage?.autoPinEdge(.bottom, to: .bottom, of: self, withOffset: 0.0)
+        
+        
+        //visual.autoPinEdge(.top, to: .bottom, of: headerImage!, withOffset: -40.0)
+        
+        visual.autoPinEdge(.left, to: .left, of: self, withOffset: 0.0)
+        
+        visual.autoPinEdge(.right, to: .right, of: self, withOffset: 0.0)
+        
+        visual.autoPinEdge(.bottom, to: .bottom, of: headerImage!, withOffset: 0.0)
+        
+        visual.autoSetDimension(.height, toSize: 15.0)
+        
     }
 }

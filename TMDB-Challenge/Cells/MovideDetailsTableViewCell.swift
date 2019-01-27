@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SafariServices
 
-class MovideDetailsTableViewCell: UITableViewCell {
+class MovideDetailsTableViewCell: UITableViewCell, SFSafariViewControllerDelegate {
     
     var poster:UIImageView?
     
@@ -16,7 +17,7 @@ class MovideDetailsTableViewCell: UITableViewCell {
     
     var originalTitle:UILabel?
     
-    var releaseDate:UILabel?
+    var votesCount:UILabel?
     
     var movie:Movie?{
         
@@ -26,9 +27,9 @@ class MovideDetailsTableViewCell: UITableViewCell {
             
             originalTitle?.text = movie?.originalTitle ?? ""
             
-            releaseDate?.text = movie?.releaseDate ?? ""
+            votesCount?.text = "Avg vote:\(movie?.voteAverage ?? 0.0) Votes:\(movie?.voteCount ?? 0)"
             
-            poster?.image = UIImage(named: "no-image")
+            poster?.image = UIImage(named: "no-image-v")
             
             poster?.moa.url = "\(IMG_URL)\(movie?.posterPath ?? "")"
             
@@ -38,6 +39,10 @@ class MovideDetailsTableViewCell: UITableViewCell {
             
         }
     }
+    
+    var trailer:UIButton?
+    
+    var video:Trailer?
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -55,7 +60,7 @@ class MovideDetailsTableViewCell: UITableViewCell {
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+        super.setSelected(false, animated: false)
         
         // Configure the view for the selected state
     }
@@ -95,35 +100,34 @@ class MovideDetailsTableViewCell: UITableViewCell {
         self.addSubview(originalTitle!)
         
         
-        releaseDate = UILabel()
+        votesCount = UILabel()
         
-        releaseDate?.font = UIFont.systemFont(ofSize: 14.0)
+        votesCount?.font = UIFont.systemFont(ofSize: 12.0)
         
-        releaseDate?.textColor = Colors.mainColor
+        votesCount?.textColor = Colors.mainColor
         
-        releaseDate?.numberOfLines = 1
+        votesCount?.numberOfLines = 1
         
-        self.addSubview(releaseDate!)
+        self.addSubview(votesCount!)
         
         
-//        language = UILabel()
-//
-//        language?.font = UIFont.systemFont(ofSize: 13.0)
-//
-//        language?.textColor = UIColor.lightGray
-//
-//        self.addSubview(language!)
-//
-//
-//        extra = UILabel()
-//
-//        extra?.font = UIFont.systemFont(ofSize: 11.0)
-//
-//        extra?.textColor = Colors.mainColor
-//
-//        extra?.textAlignment = .center
-//
-//        self.addSubview(extra!)
+        trailer = UIButton(type: .custom)
+        
+        trailer?.setTitle("  Watch Trailer  ", for: .normal)
+        
+        trailer?.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14.0)
+        
+        trailer?.titleLabel?.textColor = Colors.mainColor
+        
+        trailer?.addTarget(self, action: #selector(watchTrailer), for: .touchUpInside)
+        
+        trailer?.layer.borderWidth = 2.0
+        
+        trailer?.layer.borderColor = UIColor.white.cgColor
+        
+        trailer?.isHidden = true
+        
+        self.addSubview(trailer!)
         
         
         self.accessoryType = .none
@@ -137,6 +141,7 @@ class MovideDetailsTableViewCell: UITableViewCell {
         let imageHeight:CGFloat = CGFloat(105.0)
         
         let scaleFactor:CGFloat = CGFloat(0.7118)
+        
         
         poster?.autoPinEdge(.top, to: .top, of: self, withOffset: 18.0)
         
@@ -154,7 +159,6 @@ class MovideDetailsTableViewCell: UITableViewCell {
         title?.autoPinEdge(.right, to: .right, of: self, withOffset: -5.0)
         
         
-        
         originalTitle?.autoPinEdge(.top, to: .bottom, of: title!, withOffset: 5.0)
         
         originalTitle?.autoPinEdge(.left, to: .right, of: poster!, withOffset: 12.0)
@@ -162,47 +166,52 @@ class MovideDetailsTableViewCell: UITableViewCell {
         originalTitle?.autoPinEdge(.right, to: .right, of: self, withOffset: -5.0)
         
         
+        votesCount?.autoPinEdge(.top, to: .bottom, of: originalTitle!, withOffset: 25.0)
         
-        releaseDate?.autoPinEdge(.top, to: .bottom, of: originalTitle!, withOffset: 25.0)
+        votesCount?.autoPinEdge(.left, to: .right, of: poster!, withOffset: 12.0)
         
-        releaseDate?.autoPinEdge(.left, to: .right, of: poster!, withOffset: 12.0)
-        
-        releaseDate?.autoPinEdge(.right, to: .right, of: self, withOffset: -5.0)
-        
+        votesCount?.autoPinEdge(.right, to: .right, of: self, withOffset: -5.0)
         
         
-//        language?.autoPinEdge(.top, to: .bottom, of: originalTitle!, withOffset: 5.0)
-//
-//        language?.autoPinEdge(.left, to: .right, of: poster!, withOffset: 12.0)
-//
-//        language?.autoPinEdge(.right, to: .right, of: self, withOffset: -5.0)
-//
-//        language?.autoSetDimension(.height, toSize: 35.0)
-//
-//
-//
-//        extra?.autoPinEdge(.top, to: .bottom, of: poster!, withOffset: 5.0)
-//
-//        extra?.autoPinEdge(.left, to: .left, of: self, withOffset: 8.0)
-//
-//        //extra?.autoPinEdge(.right, to: .right, of: self, withOffset: -5.0)
-//
-//        extra?.autoSetDimension(.height, toSize: 18.0)
-//
-//        extra?.autoSetDimension(.width, toSize: (imageHeight * scaleFactor))
+        trailer?.autoPinEdge(.top, to: .top, of: self, withOffset: 75.0)
         
-        //language?.autoPinEdge(.bottom, to: .bottom, of: self, withOffset: -5.0)
+        trailer?.autoPinEdge(.right, to: .right, of: self, withOffset: -24.0)
         
-        //        status?.autoPinEdge(.top, to: .bottom, of: language!, withOffset: 5.0)
-        //        status?.autoPinEdge(.left, to: .left, of: self, withOffset: 85.0)
-        //        status?.autoPinEdge(.right, to: .right, of: self, withOffset: -5.0)
-        //status?.autoSetDimension(.height, toSize: 35.0)
+        trailer?.autoSetDimension(.width, toSize: 120.0)
         
-        //        type?.autoPinEdge(.top, to: .bottom, of: status!, withOffset: 5.0)
-        //        type?.autoPinEdge(.left, to: .left, of: self, withOffset: 85.0)
-        //        type?.autoPinEdge(.right, to: .right, of: self, withOffset: -5.0)
-        //type?.autoSetDimension(.height, toSize: 15.0)
+        trailer?.autoSetDimension(.height, toSize: 35.0)
         
+    }
+    
+    func getData(){
+        
+        Service.shared.getMovieTrailer(id: "\(self.movie?.id ?? 0)" ) { (res,err) in
+            if res != nil {
+                
+                self.video = res?.result?.filter{ $0.site == "youtube" }.first
+                
+//                OperationQueue.main.addOperation {
+//                    self.trailer?.isHidden = false
+//                }
+            }
+        }
+        
+    }
+    
+    @objc func watchTrailer(sender:UIButton){
+        
+//        print("tap tap tap")
+//
+//        let url = "https://youtu.be/\(self.video?.key ?? "")"
+//
+//        if let url = URL(string: url) {
+//
+//            let vc = SFSafariViewController(url: url)
+//
+//            vc.delegate = self
+//
+//            self.present(vc, animated: true)
+//        }
         
     }
     

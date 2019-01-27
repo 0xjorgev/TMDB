@@ -32,29 +32,45 @@ class MovieInformationTableViewCell: UITableViewCell {
 
     var status:UILabel?
     
+    var websiteTitle:UILabel?
+    
+    var website:UILabel?
+    
+    var runtimeTitle:UILabel?
+    
+    var runtime:UILabel?
+    
     var movie:Movie?{
         
         didSet{
             
             productionTitle?.text = "Production"
             
-            production?.text = "".reduceArrayToString(arr: movie?.productionCompanies?.map{ return $0.name } ?? [])
+            production?.text = "".reduceArrayToString(arr: movie?.productionCompanies?.map{ return $0.name } ?? []) + " "
             
             genreTitle?.text = "Genre"
             
-            genre?.text = movie?.genres?.first?.name ?? ""
+            genre?.text = movie?.genres?.first?.name ?? " "
             
-            releasedTitle?.text = "Released"
+            releasedTitle?.text = "Release date"
             
-            released?.text = movie?.releaseDate ?? ""
+            released?.text = movie?.releaseDate ?? " "
             
             countryTitle?.text = "Country"
             
-            country?.text = "".reduceArrayToString(arr: movie?.productionCountries?.map{ return $0.name } ?? [])
+            country?.text = "".reduceArrayToString(arr: movie?.productionCountries?.map{ return $0.name } ?? []) + " "
             
             statusTitle?.text = "Status"
             
-            status?.text = movie?.status ?? ""
+            status?.text = movie?.status ?? " "
+            
+            websiteTitle?.text = "Website"
+            
+            website?.text = movie?.homepage ?? " "
+            
+            runtimeTitle?.text = "Runtime"
+            
+            runtime?.text = "\(movie?.runtime ?? 0) min"
             
         }
     }
@@ -66,7 +82,7 @@ class MovieInformationTableViewCell: UITableViewCell {
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+        super.setSelected(false, animated: false)
 
         // Configure the view for the selected state
     }
@@ -163,6 +179,34 @@ class MovieInformationTableViewCell: UITableViewCell {
         self.addSubview(status!)
         
         
+        websiteTitle = UILabel()
+        
+        websiteTitle?.addInformationTitleStyle()
+        
+        self.addSubview(websiteTitle!)
+        
+        
+        website = UILabel()
+        
+        website?.addInformationStyle()
+        
+        self.addSubview(website!)
+        
+        
+        runtimeTitle = UILabel()
+        
+        runtimeTitle?.addInformationTitleStyle()
+        
+        self.addSubview(runtimeTitle!)
+        
+        
+        runtime = UILabel()
+        
+        runtime?.addInformationStyle()
+        
+        self.addSubview(runtime!)
+        
+        
         self.accessoryType = .none
         
         setupConstraints()
@@ -248,6 +292,34 @@ class MovieInformationTableViewCell: UITableViewCell {
         status?.autoPinEdge(.left, to: .right, of: statusTitle!, withOffset: 8.0)
         
         status?.autoPinEdge(.right, to: .right, of: self, withOffset: -12.0)
+        
+        
+        websiteTitle?.autoPinEdge(.top, to: .bottom, of: status!, withOffset: 8.0)
+        
+        websiteTitle?.autoPinEdge(.left, to: .left, of: self, withOffset: 12.0)
+        
+        websiteTitle?.autoSetDimension(.width, toSize: width)
+        
+        
+        website?.autoPinEdge(.top, to: .bottom, of: status!, withOffset: 8.0)
+        
+        website?.autoPinEdge(.left, to: .right, of: websiteTitle!, withOffset: 8.0)
+        
+        website?.autoPinEdge(.right, to: .right, of: self, withOffset: -12.0)
+        
+        
+        runtimeTitle?.autoPinEdge(.top, to: .bottom, of: website!, withOffset: 8.0)
+        
+        runtimeTitle?.autoPinEdge(.left, to: .left, of: self, withOffset: 12.0)
+        
+        runtimeTitle?.autoSetDimension(.width, toSize: width)
+        
+        
+        runtime?.autoPinEdge(.top, to: .bottom, of: website!, withOffset: 8.0)
+        
+        runtime?.autoPinEdge(.left, to: .right, of: runtimeTitle!, withOffset: 8.0)
+        
+        runtime?.autoPinEdge(.right, to: .right, of: self, withOffset: -12.0)
         
     }
 
