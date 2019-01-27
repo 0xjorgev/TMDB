@@ -30,5 +30,19 @@ class TMDB_ChallengeTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testSingleMovieByIdService(){
+        
+        Service.shared.getMovieById(id: 100) { (res, error) in
+            
+            if error == nil {
+                print("Movie: \(String(describing: res))")
+                assert(res?.title == "Lock, Stock and Two Smoking Barrels", "Title is OK")
+            } else {
+                assert(false , "Broken")
+            }
+        }
+        
+    }
 
 }

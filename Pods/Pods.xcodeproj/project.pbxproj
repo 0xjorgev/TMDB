@@ -1,0 +1,1215 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CCA353269DD63F6EEE6349ABC940D1C /* ImageView+moa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D693BD3EEA5A3F79F505218DC6CD014 /* ImageView+moa.swift */; };
+		169B8BD76AB6ADF433C0646386E820CD /* MoaSettingsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39EAFAB128A7E2D62EF17EA31EF303B /* MoaSettingsCache.swift */; };
+		1D82D03DFEB52005B414D0319F25390D /* Pods-TMDB-ChallengeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D3157974CC531A5F8C5BEE83FE55A5 /* Pods-TMDB-ChallengeTests-dummy.m */; };
+		1F22BE370B6D50272BA06AB113191F18 /* Moa.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69CBE4148080AF2EA21D9F6A92DE61 /* Moa.swift */; };
+		2716C4958A1F0C1CF145411EB393B8C1 /* Pods-TMDB-Challenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F635C20AAF78A72DFB1047F0F59ABAA3 /* Pods-TMDB-Challenge-dummy.m */; };
+		3DB042E2089A087D816D2D158732C171 /* MoaLoggerCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CC8778543E973ED10FF8E42264F8CC /* MoaLoggerCallback.swift */; };
+		43217ABD12896CF9BB124E2C1EFEA2B2 /* Pods-TMDB-ChallengeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFFB3D1AC28E227FEA64C66575A8E4C /* Pods-TMDB-ChallengeUITests-dummy.m */; };
+		43FA9FD13DD13839C2D555CBAE2CE937 /* Pods-TMDB-ChallengeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 252B5E195E8D7AF40CD55341759511BD /* Pods-TMDB-ChallengeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49ACF38B4CB3837F349076663FDBF9C8 /* MoaSimulatedImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2B566845B6504757A1D10163F5609F /* MoaSimulatedImageDownloader.swift */; };
+		51B4B5ADEE41D213AED7CD88A4485CCF /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 46463E9665969A7D1FBF30AD03543797 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F5E9BB0F218B0E301A26376111D23EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		66ABAB8C8745DC8E0C40267C7517F7C5 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 35742863F8F175FCBB8F66D4A85AE3E1 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79FF329E58250682F0CA0DEE388B455B /* MoaString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739DBDEE0C0D4E5ED2F9EA725D167B14 /* MoaString.swift */; };
+		7BA80592B3AECC7665519A9E4915E66D /* Pods-TMDB-ChallengeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A89BDFA2A6CAE6ECCE42C86ADDCC5A0 /* Pods-TMDB-ChallengeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DFB08DA7FB5B05DBED30B8A857EB376 /* MoaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4665019AFA252C68425D78372BD9203 /* MoaError.swift */; };
+		83095CCF688CA081791756C2796FA48E /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C581407BF57FBF7DDB54C7F40013F1D0 /* PureLayout-dummy.m */; };
+		873A9396383318FE2CD9FCF1C34EC893 /* moa-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DEBE09F0EFA9ABAFCE50D9456C7782AF /* moa-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9176D7BB1E025044C9AD5D23AEC79427 /* moa-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFC8D53BDD0BB84CC622B8675F897C6 /* moa-dummy.m */; };
+		948C5D68A4E06F154B0751BD340C8851 /* MoaHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE40C87D3636DBED053D824CA974C429 /* MoaHttp.swift */; };
+		957F5B03486E744A0707E102ADC7EE03 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E03158FB2AA8B7837E6742913395D56 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		985B9CE0190871A1E4BC5C92666968AE /* Pods-TMDB-Challenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E561560548A6F7A612DD4B793516F1A9 /* Pods-TMDB-Challenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2D5DA7E56B39C764B02FACA40501A03 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F241D54968DEBC2017E54F8B30FB5B51 /* NSLayoutConstraint+PureLayout.m */; };
+		A81F47448D93942221E4385A89B2D48F /* MoaHttpImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E61C8CCAE6CABD4C3681E1D0009370E /* MoaHttpImageDownloader.swift */; };
+		AD1BE67C4F4D237FDC27C21727B1F273 /* MoaLogType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90D5DECA7C4DFAAADAE23B969DE435 /* MoaLogType.swift */; };
+		B5E6BA681C975CA9EA3311E7708C6F6B /* MoaHttpSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90CDE435B7F0290B3D484E7E4DED19 /* MoaHttpSession.swift */; };
+		BB7452441E7A3E11929D68F99A73D175 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		BB8977E64E23B466A25EB873BE6E223F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		BC782AE8D1B5279E26BDD3465A12A820 /* MoaConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3219F768ED2ADE87A94C69E3326510 /* MoaConsoleLogger.swift */; };
+		BFB8A505564E263263CAF3CC68256CD5 /* MoaHttpImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8736454C00FBCCADE355B1523E9678 /* MoaHttpImage.swift */; };
+		C1E0DC1756CA71BF8D4CB7B9E92EA95C /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 802E1CD7E000C99D34AE8D2DA3679F16 /* ALView+PureLayout.m */; };
+		C2EDD6EBFAA8A2438E1B817BF516548F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		C58BD58A07060808BA9C677ED81C59A5 /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE82709E7E09EF2DCAEB7E78321592B /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAD674A6B05D0DC742733232A4C41401 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 82C913AC1E93DA97AE093DBC62352FD9 /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D209CAA7220A661EBE81B2564B1D81EF /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = F84A58B4525E716B2036D46EE6056405 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D30A21CE021B4CDB42A495816ADA4DF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		D925F14B07F1623CB10A79F65027FEFD /* MoaSimulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD4ABDD925469EA6149AAE90B5CD245 /* MoaSimulator.swift */; };
+		DCBE1F2E83BC9646E156AEF8AE9881F0 /* MoaSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE13363E8D7A379348D03E9D349CEF /* MoaSettings.swift */; };
+		E5DD032C868F5E98495135A1DBC80BBE /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = AA9970AB58BE16FAB2B4FE42CFD133D8 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E791B125D10813AC667FECB6419B8848 /* MoaImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E9DCB4D8ABA343D6FC8226E73C07B /* MoaImageDownloader.swift */; };
+		EC4FC963007569FD3EC17E8B6F23ABBB /* MoaTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B351CB0CFE9CE71F3220051BB1AD88A /* MoaTime.swift */; };
+		F4BAC416E31B52CFB608118D6604AD53 /* MoaLoggerText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184FEC76EB0621D513DCCA65858D497 /* MoaLoggerText.swift */; };
+		FCA235F65A8B28773CA2134DF3C483DC /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D200976F568ADC624A5F740CEA3306 /* NSArray+PureLayout.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D92ECFAFA6AEA0149E129DFB17F3A62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D25154691709ACF4CC2225E86BAC675A;
+			remoteInfo = PureLayout;
+		};
+		A0719C89D0AEA3AACF960E70A35B7749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57F2877EBAD3847AE2A4C3475119AAE2;
+			remoteInfo = "Pods-TMDB-Challenge";
+		};
+		E8F6FB93C6F3DC755BD61F3CFA01C71D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57F2877EBAD3847AE2A4C3475119AAE2;
+			remoteInfo = "Pods-TMDB-Challenge";
+		};
+		EA1DA1365268B247685503B3BC002C1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D8EAC98AE4D94AD3EB0F13FFEF8AC1C;
+			remoteInfo = moa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008C154B75E1DDD51149346E2807BB38 /* Pods-TMDB-ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TMDB-ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		048D5D067AD9E84AE932CABDECD819F5 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
+		05A740F83E0448AE9D19F98A439BF91C /* Pods-TMDB-ChallengeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TMDB-ChallengeTests-resources.sh"; sourceTree = "<group>"; };
+		0E8736454C00FBCCADE355B1523E9678 /* MoaHttpImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoaHttpImage.swift; path = Moa/Http/MoaHttpImage.swift; sourceTree = "<group>"; };
+		0EFFB3D1AC28E227FEA64C66575A8E4C /* Pods-TMDB-ChallengeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TMDB-ChallengeUITests-dummy.m"; sourceTree = "<group>"; };
+		0FE82709E7E09EF2DCAEB7E78321592B /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
+		11A99EB2F5AA4B148D7B81A23283DA42 /* Pods-TMDB-ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TMDB-ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		1312D6063FE1F7A3B93B0E1A8AFD2846 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		218A4D9168B6623F66D6FD0E0808C0CD /* Pods-TMDB-ChallengeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TMDB-ChallengeTests-frameworks.sh"; sourceTree = "<group>"; };
+		21E10405F0F16CB6DC89A7123596D67F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		252B5E195E8D7AF40CD55341759511BD /* Pods-TMDB-ChallengeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TMDB-ChallengeTests-umbrella.h"; sourceTree = "<group>"; };
+		35742863F8F175FCBB8F66D4A85AE3E1 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		35CC8778543E973ED10FF8E42264F8CC /* MoaLoggerCallback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoaLoggerCallback.swift; path = Moa/Logger/MoaLoggerCallback.swift; sourceTree = "<group>"; };
+		3658FC29086B76F80D253EC952311CA3 /* Pods-TMDB-ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TMDB-ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		39F476B52FCF6AA5DB5C30D49930507A /* Pods-TMDB-Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TMDB-Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		3E7A81DD2148AC9E5E1E89E9B6D70702 /* Pods-TMDB-ChallengeUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TMDB-ChallengeUITests-frameworks.sh"; sourceTree = "<group>"; };
+		408A7CE03026B963BDBECB7BEE043470 /* moa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = moa.xcconfig; sourceTree = "<group>"; };
+		40CAEBB0D116BA319115FBAE96CF13A0 /* Pods-TMDB-Challenge-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TMDB-Challenge-frameworks.sh"; sourceTree = "<group>"; };
+		42E168CB67F8A1D7CD7BF8063BB209EF /* Pods-TMDB-ChallengeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TMDB-ChallengeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		46463E9665969A7D1FBF30AD03543797 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		46E0C9BA362CD8B51981A861A9EE0E47 /* moa-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "moa-prefix.pch"; sourceTree = "<group>"; };
+		4E03158FB2AA8B7837E6742913395D56 /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		4E90D5DECA7C4DFAAADAE23B969DE435 /* MoaLogType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoaLogType.swift; path = Moa/Logger/MoaLogType.swift; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5E61C8CCAE6CABD4C3681E1D0009370E /* MoaHttpImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoaHttpImageDownloader.swift; path = Moa/Http/MoaHttpImageDownloader.swift; sourceTree = "<group>"; };
+		63E1BABEE2F331CE5091277E760B6400 /* Pods_TMDB_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TMDB_Challenge.framework; path = "Pods-TMDB-Challenge.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B1E66E95AB0B07C5A9308B375D8D782 /* Pods_TMDB_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TMDB_ChallengeTests.framework; path = "Pods-TMDB-ChallengeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CD4ABDD925469EA6149AAE90B5CD245 /* MoaSimulator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoaSimulator.swift; path = Moa/Simulator/MoaSimulator.swift; sourceTree = "<group>"; };
+		6D32BB892BA905DC1ABB65BC1A7B379B /* Pods-TMDB-ChallengeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TMDB-ChallengeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6D693BD3EEA5A3F79F505218DC6CD014 /* ImageView+moa.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+moa.swift"; path = "Moa/ImageView+moa.swift"; sourceTree = "<group>"; };
+		7184FEC76EB0621D513DCCA65858D497 /* MoaLoggerText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoaLoggerText.swift; path = Moa/Logger/MoaLoggerText.swift; sourceTree = "<group>"; };
+		72B553DF58904CDFC1C5E8776ED35ECA /* Pods_TMDB_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TMDB_ChallengeUITests.framework; path = "Pods-TMDB-ChallengeUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7304776CF5363578461305FE279B2957 /* moa.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = moa.modulemap; sourceTree = "<group>"; };
+		739DBDEE0C0D4E5ED2F9EA725D167B14 /* MoaString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoaString.swift; path = Moa/Utils/MoaString.swift; sourceTree = "<group>"; };
+		777DE76B5A4565FE5284E6079F15511B /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A89BDFA2A6CAE6ECCE42C86ADDCC5A0 /* Pods-TMDB-ChallengeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TMDB-ChallengeUITests-umbrella.h"; sourceTree = "<group>"; };
+		7B351CB0CFE9CE71F3220051BB1AD88A /* MoaTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoaTime.swift; path = Moa/Utils/MoaTime.swift; sourceTree = "<group>"; };
+		7CABF6BB7FA9F3B21FDD9F6AC00CFB96 /* moa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = moa.framework; path = moa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		802E1CD7E000C99D34AE8D2DA3679F16 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
+		82C913AC1E93DA97AE093DBC62352FD9 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		8D90CDE435B7F0290B3D484E7E4DED19 /* MoaHttpSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoaHttpSession.swift; path = Moa/Http/MoaHttpSession.swift; sourceTree = "<group>"; };
+		8EFC8D53BDD0BB84CC622B8675F897C6 /* moa-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "moa-dummy.m"; sourceTree = "<group>"; };
+		8FD4AC3EDAF70A3E8CB1E3A9AA4B218F /* Pods-TMDB-Challenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TMDB-Challenge-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A675D356C79252713B2FD222CA235E9 /* Pods-TMDB-ChallengeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TMDB-ChallengeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A350CF168ABD9021C835F59F06090DA1 /* Pods-TMDB-ChallengeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TMDB-ChallengeTests.modulemap"; sourceTree = "<group>"; };
+		AA9970AB58BE16FAB2B4FE42CFD133D8 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
+		B22324FA5E9F9B36FB5755C64FC6219F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2D3157974CC531A5F8C5BEE83FE55A5 /* Pods-TMDB-ChallengeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TMDB-ChallengeTests-dummy.m"; sourceTree = "<group>"; };
+		B39EAFAB128A7E2D62EF17EA31EF303B /* MoaSettingsCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoaSettingsCache.swift; path = Moa/MoaSettingsCache.swift; sourceTree = "<group>"; };
+		B49E9DCB4D8ABA343D6FC8226E73C07B /* MoaImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoaImageDownloader.swift; path = Moa/MoaImageDownloader.swift; sourceTree = "<group>"; };
+		B6D200976F568ADC624A5F740CEA3306 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		C33D284238F211EB0C4CDD1787C335F7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C581407BF57FBF7DDB54C7F40013F1D0 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
+		C964D40166F995EA18E56D252ED71E64 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		CB69CBE4148080AF2EA21D9F6A92DE61 /* Moa.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Moa.swift; path = Moa/Moa.swift; sourceTree = "<group>"; };
+		CE0660B9767C74355CC4622DE95E1FF5 /* Pods-TMDB-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TMDB-Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		D07724F00DB97062984CBD0311C92297 /* Pods-TMDB-ChallengeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TMDB-ChallengeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D931B58ADCCDD66995C02C8E30776931 /* Pods-TMDB-ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TMDB-ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE8CE7DFFD9F70465E0D63E66C7EEC4A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEBE09F0EFA9ABAFCE50D9456C7782AF /* moa-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "moa-umbrella.h"; sourceTree = "<group>"; };
+		DF424559864B1D4B1DBCA110008BD2B7 /* Pods-TMDB-Challenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TMDB-Challenge.modulemap"; sourceTree = "<group>"; };
+		DFAE13363E8D7A379348D03E9D349CEF /* MoaSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoaSettings.swift; path = Moa/MoaSettings.swift; sourceTree = "<group>"; };
+		E4665019AFA252C68425D78372BD9203 /* MoaError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoaError.swift; path = Moa/Http/MoaError.swift; sourceTree = "<group>"; };
+		E561560548A6F7A612DD4B793516F1A9 /* Pods-TMDB-Challenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TMDB-Challenge-umbrella.h"; sourceTree = "<group>"; };
+		E8F03BAA44BBC5F4E329DB48EAA0FAAF /* Pods-TMDB-Challenge-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TMDB-Challenge-resources.sh"; sourceTree = "<group>"; };
+		EB2B566845B6504757A1D10163F5609F /* MoaSimulatedImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoaSimulatedImageDownloader.swift; path = Moa/Simulator/MoaSimulatedImageDownloader.swift; sourceTree = "<group>"; };
+		EE40C87D3636DBED053D824CA974C429 /* MoaHttp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoaHttp.swift; path = Moa/Http/MoaHttp.swift; sourceTree = "<group>"; };
+		F1C18B745384890D4C56F2BB35D3C90D /* Pods-TMDB-ChallengeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TMDB-ChallengeUITests.modulemap"; sourceTree = "<group>"; };
+		F241D54968DEBC2017E54F8B30FB5B51 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		F326F6B117520393648EEFD5EF44A1E5 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PureLayout.modulemap; sourceTree = "<group>"; };
+		F42AD0F382E5D79E22B8DD7CF305C619 /* Pods-TMDB-Challenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TMDB-Challenge-acknowledgements.plist"; sourceTree = "<group>"; };
+		F635C20AAF78A72DFB1047F0F59ABAA3 /* Pods-TMDB-Challenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TMDB-Challenge-dummy.m"; sourceTree = "<group>"; };
+		F84A58B4525E716B2036D46EE6056405 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		FA3219F768ED2ADE87A94C69E3326510 /* MoaConsoleLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoaConsoleLogger.swift; path = Moa/Logger/MoaConsoleLogger.swift; sourceTree = "<group>"; };
+		FE6CBE33CD6A30AFCBE10DAED8BC39AE /* Pods-TMDB-ChallengeUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TMDB-ChallengeUITests-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24B3435E8D0D80C1E7AD123AD8C7E798 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F5E9BB0F218B0E301A26376111D23EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26FBD7DD4C30258686B22E65F7AD2839 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8977E64E23B466A25EB873BE6E223F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30F9D2DC3FA8286513C29CF9E476B994 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7452441E7A3E11929D68F99A73D175 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A118799C9245CF395C784A229B9E67C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30A21CE021B4CDB42A495816ADA4DF8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C117F71271337D89188A2F95CE28D776 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2EDD6EBFAA8A2438E1B817BF516548F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00EFE676AB89BB8FDE9F510BE1B71191 /* Pods-TMDB-Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				B22324FA5E9F9B36FB5755C64FC6219F /* Info.plist */,
+				DF424559864B1D4B1DBCA110008BD2B7 /* Pods-TMDB-Challenge.modulemap */,
+				8FD4AC3EDAF70A3E8CB1E3A9AA4B218F /* Pods-TMDB-Challenge-acknowledgements.markdown */,
+				F42AD0F382E5D79E22B8DD7CF305C619 /* Pods-TMDB-Challenge-acknowledgements.plist */,
+				F635C20AAF78A72DFB1047F0F59ABAA3 /* Pods-TMDB-Challenge-dummy.m */,
+				40CAEBB0D116BA319115FBAE96CF13A0 /* Pods-TMDB-Challenge-frameworks.sh */,
+				E8F03BAA44BBC5F4E329DB48EAA0FAAF /* Pods-TMDB-Challenge-resources.sh */,
+				E561560548A6F7A612DD4B793516F1A9 /* Pods-TMDB-Challenge-umbrella.h */,
+				39F476B52FCF6AA5DB5C30D49930507A /* Pods-TMDB-Challenge.debug.xcconfig */,
+				CE0660B9767C74355CC4622DE95E1FF5 /* Pods-TMDB-Challenge.release.xcconfig */,
+			);
+			name = "Pods-TMDB-Challenge";
+			path = "Target Support Files/Pods-TMDB-Challenge";
+			sourceTree = "<group>";
+		};
+		03F47BC48AE634FAAD7E4D356149A313 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE8CE7DFFD9F70465E0D63E66C7EEC4A /* Info.plist */,
+				F326F6B117520393648EEFD5EF44A1E5 /* PureLayout.modulemap */,
+				048D5D067AD9E84AE932CABDECD819F5 /* PureLayout.xcconfig */,
+				C581407BF57FBF7DDB54C7F40013F1D0 /* PureLayout-dummy.m */,
+				C964D40166F995EA18E56D252ED71E64 /* PureLayout-prefix.pch */,
+				0FE82709E7E09EF2DCAEB7E78321592B /* PureLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
+			sourceTree = "<group>";
+		};
+		4FA6BB1881191A082E464A016DB70E19 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				00EFE676AB89BB8FDE9F510BE1B71191 /* Pods-TMDB-Challenge */,
+				5F177C5825249C0640785BFDB2A4E3E8 /* Pods-TMDB-ChallengeTests */,
+				E9D56253F97E4BE809CA7926444571FE /* Pods-TMDB-ChallengeUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		54B74E8A2417E574633A8E6668BB98C4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1312D6063FE1F7A3B93B0E1A8AFD2846 /* Info.plist */,
+				7304776CF5363578461305FE279B2957 /* moa.modulemap */,
+				408A7CE03026B963BDBECB7BEE043470 /* moa.xcconfig */,
+				8EFC8D53BDD0BB84CC622B8675F897C6 /* moa-dummy.m */,
+				46E0C9BA362CD8B51981A861A9EE0E47 /* moa-prefix.pch */,
+				DEBE09F0EFA9ABAFCE50D9456C7782AF /* moa-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/moa";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5F177C5825249C0640785BFDB2A4E3E8 /* Pods-TMDB-ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C33D284238F211EB0C4CDD1787C335F7 /* Info.plist */,
+				A350CF168ABD9021C835F59F06090DA1 /* Pods-TMDB-ChallengeTests.modulemap */,
+				6D32BB892BA905DC1ABB65BC1A7B379B /* Pods-TMDB-ChallengeTests-acknowledgements.markdown */,
+				9A675D356C79252713B2FD222CA235E9 /* Pods-TMDB-ChallengeTests-acknowledgements.plist */,
+				B2D3157974CC531A5F8C5BEE83FE55A5 /* Pods-TMDB-ChallengeTests-dummy.m */,
+				218A4D9168B6623F66D6FD0E0808C0CD /* Pods-TMDB-ChallengeTests-frameworks.sh */,
+				05A740F83E0448AE9D19F98A439BF91C /* Pods-TMDB-ChallengeTests-resources.sh */,
+				252B5E195E8D7AF40CD55341759511BD /* Pods-TMDB-ChallengeTests-umbrella.h */,
+				D931B58ADCCDD66995C02C8E30776931 /* Pods-TMDB-ChallengeTests.debug.xcconfig */,
+				11A99EB2F5AA4B148D7B81A23283DA42 /* Pods-TMDB-ChallengeTests.release.xcconfig */,
+			);
+			name = "Pods-TMDB-ChallengeTests";
+			path = "Target Support Files/Pods-TMDB-ChallengeTests";
+			sourceTree = "<group>";
+		};
+		6B1E2C0B9A0DD33AE1114B3B3D97D35A /* moa */ = {
+			isa = PBXGroup;
+			children = (
+				6D693BD3EEA5A3F79F505218DC6CD014 /* ImageView+moa.swift */,
+				CB69CBE4148080AF2EA21D9F6A92DE61 /* Moa.swift */,
+				FA3219F768ED2ADE87A94C69E3326510 /* MoaConsoleLogger.swift */,
+				E4665019AFA252C68425D78372BD9203 /* MoaError.swift */,
+				EE40C87D3636DBED053D824CA974C429 /* MoaHttp.swift */,
+				0E8736454C00FBCCADE355B1523E9678 /* MoaHttpImage.swift */,
+				5E61C8CCAE6CABD4C3681E1D0009370E /* MoaHttpImageDownloader.swift */,
+				8D90CDE435B7F0290B3D484E7E4DED19 /* MoaHttpSession.swift */,
+				B49E9DCB4D8ABA343D6FC8226E73C07B /* MoaImageDownloader.swift */,
+				35CC8778543E973ED10FF8E42264F8CC /* MoaLoggerCallback.swift */,
+				7184FEC76EB0621D513DCCA65858D497 /* MoaLoggerText.swift */,
+				4E90D5DECA7C4DFAAADAE23B969DE435 /* MoaLogType.swift */,
+				DFAE13363E8D7A379348D03E9D349CEF /* MoaSettings.swift */,
+				B39EAFAB128A7E2D62EF17EA31EF303B /* MoaSettingsCache.swift */,
+				EB2B566845B6504757A1D10163F5609F /* MoaSimulatedImageDownloader.swift */,
+				6CD4ABDD925469EA6149AAE90B5CD245 /* MoaSimulator.swift */,
+				739DBDEE0C0D4E5ED2F9EA725D167B14 /* MoaString.swift */,
+				7B351CB0CFE9CE71F3220051BB1AD88A /* MoaTime.swift */,
+				54B74E8A2417E574633A8E6668BB98C4 /* Support Files */,
+			);
+			name = moa;
+			path = moa;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				E225EA5E240AEA23339F4D950C4973D9 /* Pods */,
+				803B4838F57E2ABF15B7B42159F585FD /* Products */,
+				4FA6BB1881191A082E464A016DB70E19 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		803B4838F57E2ABF15B7B42159F585FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CABF6BB7FA9F3B21FDD9F6AC00CFB96 /* moa.framework */,
+				63E1BABEE2F331CE5091277E760B6400 /* Pods_TMDB_Challenge.framework */,
+				6B1E66E95AB0B07C5A9308B375D8D782 /* Pods_TMDB_ChallengeTests.framework */,
+				72B553DF58904CDFC1C5E8776ED35ECA /* Pods_TMDB_ChallengeUITests.framework */,
+				777DE76B5A4565FE5284E6079F15511B /* PureLayout.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		877DEA63392A136474D5C60A446B48F4 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				4E03158FB2AA8B7837E6742913395D56 /* ALView+PureLayout.h */,
+				802E1CD7E000C99D34AE8D2DA3679F16 /* ALView+PureLayout.m */,
+				35742863F8F175FCBB8F66D4A85AE3E1 /* NSArray+PureLayout.h */,
+				B6D200976F568ADC624A5F740CEA3306 /* NSArray+PureLayout.m */,
+				82C913AC1E93DA97AE093DBC62352FD9 /* NSLayoutConstraint+PureLayout.h */,
+				F241D54968DEBC2017E54F8B30FB5B51 /* NSLayoutConstraint+PureLayout.m */,
+				AA9970AB58BE16FAB2B4FE42CFD133D8 /* PureLayout.h */,
+				46463E9665969A7D1FBF30AD03543797 /* PureLayout+Internal.h */,
+				F84A58B4525E716B2036D46EE6056405 /* PureLayoutDefines.h */,
+				03F47BC48AE634FAAD7E4D356149A313 /* Support Files */,
+			);
+			name = PureLayout;
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E225EA5E240AEA23339F4D950C4973D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B1E2C0B9A0DD33AE1114B3B3D97D35A /* moa */,
+				877DEA63392A136474D5C60A446B48F4 /* PureLayout */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E9D56253F97E4BE809CA7926444571FE /* Pods-TMDB-ChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				21E10405F0F16CB6DC89A7123596D67F /* Info.plist */,
+				F1C18B745384890D4C56F2BB35D3C90D /* Pods-TMDB-ChallengeUITests.modulemap */,
+				D07724F00DB97062984CBD0311C92297 /* Pods-TMDB-ChallengeUITests-acknowledgements.markdown */,
+				42E168CB67F8A1D7CD7BF8063BB209EF /* Pods-TMDB-ChallengeUITests-acknowledgements.plist */,
+				0EFFB3D1AC28E227FEA64C66575A8E4C /* Pods-TMDB-ChallengeUITests-dummy.m */,
+				3E7A81DD2148AC9E5E1E89E9B6D70702 /* Pods-TMDB-ChallengeUITests-frameworks.sh */,
+				FE6CBE33CD6A30AFCBE10DAED8BC39AE /* Pods-TMDB-ChallengeUITests-resources.sh */,
+				7A89BDFA2A6CAE6ECCE42C86ADDCC5A0 /* Pods-TMDB-ChallengeUITests-umbrella.h */,
+				008C154B75E1DDD51149346E2807BB38 /* Pods-TMDB-ChallengeUITests.debug.xcconfig */,
+				3658FC29086B76F80D253EC952311CA3 /* Pods-TMDB-ChallengeUITests.release.xcconfig */,
+			);
+			name = "Pods-TMDB-ChallengeUITests";
+			path = "Target Support Files/Pods-TMDB-ChallengeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3B6BDA89CE7BC86E85846AA8D9490E38 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BA80592B3AECC7665519A9E4915E66D /* Pods-TMDB-ChallengeUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D845817881CFA9EA82423252499E8E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873A9396383318FE2CD9FCF1C34EC893 /* moa-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9965AA0705DCE6923DE0105D839AA75F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				985B9CE0190871A1E4BC5C92666968AE /* Pods-TMDB-Challenge-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FDC4DA77155130F6B40C34203E03A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43FA9FD13DD13839C2D555CBAE2CE937 /* Pods-TMDB-ChallengeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B340A90EDCC83305F8469749EBB47889 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				957F5B03486E744A0707E102ADC7EE03 /* ALView+PureLayout.h in Headers */,
+				66ABAB8C8745DC8E0C40267C7517F7C5 /* NSArray+PureLayout.h in Headers */,
+				CAD674A6B05D0DC742733232A4C41401 /* NSLayoutConstraint+PureLayout.h in Headers */,
+				51B4B5ADEE41D213AED7CD88A4485CCF /* PureLayout+Internal.h in Headers */,
+				C58BD58A07060808BA9C677ED81C59A5 /* PureLayout-umbrella.h in Headers */,
+				E5DD032C868F5E98495135A1DBC80BBE /* PureLayout.h in Headers */,
+				D209CAA7220A661EBE81B2564B1D81EF /* PureLayoutDefines.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		57F2877EBAD3847AE2A4C3475119AAE2 /* Pods-TMDB-Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8037722772407B76288F968AEF5D948A /* Build configuration list for PBXNativeTarget "Pods-TMDB-Challenge" */;
+			buildPhases = (
+				CCDF89B0687825D0F6AF65AE6D7796C1 /* Sources */,
+				30F9D2DC3FA8286513C29CF9E476B994 /* Frameworks */,
+				9965AA0705DCE6923DE0105D839AA75F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48884B69467E1CA2B2ECD5A6A4170CAF /* PBXTargetDependency */,
+				885998AEEE1E0179A7A91B017649CD80 /* PBXTargetDependency */,
+			);
+			name = "Pods-TMDB-Challenge";
+			productName = "Pods-TMDB-Challenge";
+			productReference = 63E1BABEE2F331CE5091277E760B6400 /* Pods_TMDB_Challenge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6D8EAC98AE4D94AD3EB0F13FFEF8AC1C /* moa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 124C8A67389627C14A58D4BCE2B78212 /* Build configuration list for PBXNativeTarget "moa" */;
+			buildPhases = (
+				541F08CFC51C3A202E9671A9F4D55F41 /* Sources */,
+				A118799C9245CF395C784A229B9E67C6 /* Frameworks */,
+				59D845817881CFA9EA82423252499E8E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = moa;
+			productName = moa;
+			productReference = 7CABF6BB7FA9F3B21FDD9F6AC00CFB96 /* moa.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E7C42E728A96924D0806921C673BB64 /* Pods-TMDB-ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F1E7E5751A05CB20923406FCAB8E7A8 /* Build configuration list for PBXNativeTarget "Pods-TMDB-ChallengeTests" */;
+			buildPhases = (
+				B4253FE5047664D0EE7FD22F319ACD19 /* Sources */,
+				C117F71271337D89188A2F95CE28D776 /* Frameworks */,
+				A9FDC4DA77155130F6B40C34203E03A0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3720CC44DDC18BA9FA46A0D4F13A9CB9 /* PBXTargetDependency */,
+			);
+			name = "Pods-TMDB-ChallengeTests";
+			productName = "Pods-TMDB-ChallengeTests";
+			productReference = 6B1E66E95AB0B07C5A9308B375D8D782 /* Pods_TMDB_ChallengeTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9E172B4CBC640225374A8748AC52A35C /* Pods-TMDB-ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAB5097860CFBB5055E6D3711B83E951 /* Build configuration list for PBXNativeTarget "Pods-TMDB-ChallengeUITests" */;
+			buildPhases = (
+				B75B5290333CE7615FA8A6C74B59AAEE /* Sources */,
+				24B3435E8D0D80C1E7AD123AD8C7E798 /* Frameworks */,
+				3B6BDA89CE7BC86E85846AA8D9490E38 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE6123D2F9D1729C00CC336E6E9B2C3B /* PBXTargetDependency */,
+			);
+			name = "Pods-TMDB-ChallengeUITests";
+			productName = "Pods-TMDB-ChallengeUITests";
+			productReference = 72B553DF58904CDFC1C5E8776ED35ECA /* Pods_TMDB_ChallengeUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D25154691709ACF4CC2225E86BAC675A /* PureLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CFD958853AA9F1DEB481982BF65E005 /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildPhases = (
+				3B69F0B9AB041F3EBCC485574DB528ED /* Sources */,
+				26FBD7DD4C30258686B22E65F7AD2839 /* Frameworks */,
+				B340A90EDCC83305F8469749EBB47889 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PureLayout;
+			productName = PureLayout;
+			productReference = 777DE76B5A4565FE5284E6079F15511B /* PureLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 803B4838F57E2ABF15B7B42159F585FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D8EAC98AE4D94AD3EB0F13FFEF8AC1C /* moa */,
+				57F2877EBAD3847AE2A4C3475119AAE2 /* Pods-TMDB-Challenge */,
+				6E7C42E728A96924D0806921C673BB64 /* Pods-TMDB-ChallengeTests */,
+				9E172B4CBC640225374A8748AC52A35C /* Pods-TMDB-ChallengeUITests */,
+				D25154691709ACF4CC2225E86BAC675A /* PureLayout */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B69F0B9AB041F3EBCC485574DB528ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E0DC1756CA71BF8D4CB7B9E92EA95C /* ALView+PureLayout.m in Sources */,
+				FCA235F65A8B28773CA2134DF3C483DC /* NSArray+PureLayout.m in Sources */,
+				A2D5DA7E56B39C764B02FACA40501A03 /* NSLayoutConstraint+PureLayout.m in Sources */,
+				83095CCF688CA081791756C2796FA48E /* PureLayout-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541F08CFC51C3A202E9671A9F4D55F41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CCA353269DD63F6EEE6349ABC940D1C /* ImageView+moa.swift in Sources */,
+				9176D7BB1E025044C9AD5D23AEC79427 /* moa-dummy.m in Sources */,
+				1F22BE370B6D50272BA06AB113191F18 /* Moa.swift in Sources */,
+				BC782AE8D1B5279E26BDD3465A12A820 /* MoaConsoleLogger.swift in Sources */,
+				7DFB08DA7FB5B05DBED30B8A857EB376 /* MoaError.swift in Sources */,
+				948C5D68A4E06F154B0751BD340C8851 /* MoaHttp.swift in Sources */,
+				BFB8A505564E263263CAF3CC68256CD5 /* MoaHttpImage.swift in Sources */,
+				A81F47448D93942221E4385A89B2D48F /* MoaHttpImageDownloader.swift in Sources */,
+				B5E6BA681C975CA9EA3311E7708C6F6B /* MoaHttpSession.swift in Sources */,
+				E791B125D10813AC667FECB6419B8848 /* MoaImageDownloader.swift in Sources */,
+				3DB042E2089A087D816D2D158732C171 /* MoaLoggerCallback.swift in Sources */,
+				F4BAC416E31B52CFB608118D6604AD53 /* MoaLoggerText.swift in Sources */,
+				AD1BE67C4F4D237FDC27C21727B1F273 /* MoaLogType.swift in Sources */,
+				DCBE1F2E83BC9646E156AEF8AE9881F0 /* MoaSettings.swift in Sources */,
+				169B8BD76AB6ADF433C0646386E820CD /* MoaSettingsCache.swift in Sources */,
+				49ACF38B4CB3837F349076663FDBF9C8 /* MoaSimulatedImageDownloader.swift in Sources */,
+				D925F14B07F1623CB10A79F65027FEFD /* MoaSimulator.swift in Sources */,
+				79FF329E58250682F0CA0DEE388B455B /* MoaString.swift in Sources */,
+				EC4FC963007569FD3EC17E8B6F23ABBB /* MoaTime.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4253FE5047664D0EE7FD22F319ACD19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D82D03DFEB52005B414D0319F25390D /* Pods-TMDB-ChallengeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B75B5290333CE7615FA8A6C74B59AAEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43217ABD12896CF9BB124E2C1EFEA2B2 /* Pods-TMDB-ChallengeUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCDF89B0687825D0F6AF65AE6D7796C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2716C4958A1F0C1CF145411EB393B8C1 /* Pods-TMDB-Challenge-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3720CC44DDC18BA9FA46A0D4F13A9CB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TMDB-Challenge";
+			target = 57F2877EBAD3847AE2A4C3475119AAE2 /* Pods-TMDB-Challenge */;
+			targetProxy = A0719C89D0AEA3AACF960E70A35B7749 /* PBXContainerItemProxy */;
+		};
+		48884B69467E1CA2B2ECD5A6A4170CAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = D25154691709ACF4CC2225E86BAC675A /* PureLayout */;
+			targetProxy = 2D92ECFAFA6AEA0149E129DFB17F3A62 /* PBXContainerItemProxy */;
+		};
+		885998AEEE1E0179A7A91B017649CD80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = moa;
+			target = 6D8EAC98AE4D94AD3EB0F13FFEF8AC1C /* moa */;
+			targetProxy = EA1DA1365268B247685503B3BC002C1F /* PBXContainerItemProxy */;
+		};
+		BE6123D2F9D1729C00CC336E6E9B2C3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TMDB-Challenge";
+			target = 57F2877EBAD3847AE2A4C3475119AAE2 /* Pods-TMDB-Challenge */;
+			targetProxy = E8F6FB93C6F3DC755BD61F3CFA01C71D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		17D0B400C31F562256E8D85869031B5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11A99EB2F5AA4B148D7B81A23283DA42 /* Pods-TMDB-ChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TMDB-ChallengeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TMDB-ChallengeTests/Pods-TMDB-ChallengeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		21FC6553ACD267CF0910D9D407E35621 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 408A7CE03026B963BDBECB7BEE043470 /* moa.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/moa/moa-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/moa/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/moa/moa.modulemap";
+				PRODUCT_MODULE_NAME = moa;
+				PRODUCT_NAME = moa;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2D117B85079878E7900C9EA5CD777199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 008C154B75E1DDD51149346E2807BB38 /* Pods-TMDB-ChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TMDB-ChallengeUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TMDB-ChallengeUITests/Pods-TMDB-ChallengeUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3F4E295471C57E7034D9E50F4ECA115C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE0660B9767C74355CC4622DE95E1FF5 /* Pods-TMDB-Challenge.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TMDB-Challenge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TMDB-Challenge/Pods-TMDB-Challenge.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		49CEF87CE39A44C6DF68EF51546734DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3658FC29086B76F80D253EC952311CA3 /* Pods-TMDB-ChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TMDB-ChallengeUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TMDB-ChallengeUITests/Pods-TMDB-ChallengeUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7206E253D7BCD0BE501DEF0E15EADBBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D931B58ADCCDD66995C02C8E30776931 /* Pods-TMDB-ChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TMDB-ChallengeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TMDB-ChallengeTests/Pods-TMDB-ChallengeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AB669BE96411A71911AD7BADE8273751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39F476B52FCF6AA5DB5C30D49930507A /* Pods-TMDB-Challenge.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TMDB-Challenge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TMDB-Challenge/Pods-TMDB-Challenge.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DC3AF5C67966C669B3526C992E3FBBAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 048D5D067AD9E84AE932CABDECD819F5 /* PureLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				PRODUCT_MODULE_NAME = PureLayout;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E40705B17C5BFB6C6831190316DF0CE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 048D5D067AD9E84AE932CABDECD819F5 /* PureLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				PRODUCT_MODULE_NAME = PureLayout;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F87404966DF6D32EA506D4166934BFE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 408A7CE03026B963BDBECB7BEE043470 /* moa.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/moa/moa-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/moa/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/moa/moa.modulemap";
+				PRODUCT_MODULE_NAME = moa;
+				PRODUCT_NAME = moa;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		124C8A67389627C14A58D4BCE2B78212 /* Build configuration list for PBXNativeTarget "moa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87404966DF6D32EA506D4166934BFE9 /* Debug */,
+				21FC6553ACD267CF0910D9D407E35621 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
+				08638A96A528B1EC32DE62F8A728389D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F1E7E5751A05CB20923406FCAB8E7A8 /* Build configuration list for PBXNativeTarget "Pods-TMDB-ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7206E253D7BCD0BE501DEF0E15EADBBA /* Debug */,
+				17D0B400C31F562256E8D85869031B5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8037722772407B76288F968AEF5D948A /* Build configuration list for PBXNativeTarget "Pods-TMDB-Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB669BE96411A71911AD7BADE8273751 /* Debug */,
+				3F4E295471C57E7034D9E50F4ECA115C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CFD958853AA9F1DEB481982BF65E005 /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E40705B17C5BFB6C6831190316DF0CE2 /* Debug */,
+				DC3AF5C67966C669B3526C992E3FBBAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAB5097860CFBB5055E6D3711B83E951 /* Build configuration list for PBXNativeTarget "Pods-TMDB-ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D117B85079878E7900C9EA5CD777199 /* Debug */,
+				49CEF87CE39A44C6DF68EF51546734DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
