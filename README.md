@@ -69,5 +69,3 @@ The project runs one tabBar controller containing 2 ViewControllers, one for the
 
 The second controllers uses the search API service that allows you to search any movie by its name
 
-
-
